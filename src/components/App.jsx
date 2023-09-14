@@ -1,16 +1,17 @@
+import { ToastContainer } from 'react-toastify';
+import Form from './Form/Form';
+import ContactsList from './ContactsList/ContactsList';
+import Filter from './Filter/Filter';
+import { Container, Title } from './App.styled';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <Title>Phonebook</Title>
+      <Form />
+      <Filter />
+      <ContactsList />
+      <ToastContainer />
+    </Container>
   );
 };
