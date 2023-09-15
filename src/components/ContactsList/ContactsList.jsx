@@ -6,7 +6,7 @@ import { ContactsListWrapp, List, ListItem } from './ContactsList.styled';
 
 export default function ContactsList() {
   const contacts = useSelector(getContactBySearch);
-  console.log('contacts ==>', contacts);
+  // console.log('contacts ==>', contacts);
 
   return (
     <ContactsListWrapp>

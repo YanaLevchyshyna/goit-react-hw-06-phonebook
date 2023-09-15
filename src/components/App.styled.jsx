@@ -9,3 +9,9 @@ export const Title = styled.h1`
   margin: 0;
   text-align: center;
 `;
+
+export const EmptyTitle = styled.p`
+  color: ${p => p.theme.colors.primary};
+  margin: 0;
+  text-align: center;
+`;
