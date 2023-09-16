@@ -1,11 +1,13 @@
 import { useSelector } from 'react-redux';
-import { getContactBySearch } from 'redux/selectors';
+// import { getContactBySearch } from 'redux/selectors';
+import { selectContactBySearch } from 'redux/selectors';
+
 import ContactItem from '../ContactItem/ContactItem';
 
 import { ContactsListWrapp, List, ListItem } from './ContactsList.styled';
 
 export default function ContactsList() {
-  const contacts = useSelector(getContactBySearch);
+  const contacts = useSelector(selectContactBySearch);
   // console.log('contacts ==>', contacts);
 
   return (

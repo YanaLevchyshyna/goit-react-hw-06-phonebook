@@ -6,7 +6,7 @@ import { filterContacts } from 'redux/filterSlice';
 
 export default function Filter() {
   const value = useSelector(getFilter);
-  console.log('valueFilter ===>', value);
+  // console.log('valueFilter ===>', value);
 
   const dispatch = useDispatch();
 
